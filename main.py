@@ -74,14 +74,6 @@ def do_start(update: Update, context) -> str:
     )
 
 
-def do_start2(update: Update, context):
-    """Обработчик стартового вызова"""
-    context.bot.send_message(
-        chat_id=update.message.chat_id,
-        text="Транслит",
-        reply_markup=get_base_reply_keyboard(),
-    )
-
 @debug_requests
 def do_help(update: Update, context):
     """Обрабатывает обращение юзера к функции help"""
